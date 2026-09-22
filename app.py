@@ -45,9 +45,9 @@ st.title("Loan Approval Predictor")
 st.write("Enter applicant details:")
 
 # Updated inputs to match your dataset columns
-income = st.number_input("Annual Income", min_value=0, value=50000)
+income = st.number_input("Annual Income", min_value=5000, value=50000)
 credit_score = st.number_input("Credit Score", min_value=300, max_value=850, value=600)
-loan_amount = st.number_input("Loan Amount", min_value=0, value=15000)
+loan_amount = st.number_input("Loan Amount", min_value=1000, value=15000)
 employment_years = st.number_input("Employment History (Years)", min_value=0, value=2)
 
 if st.button("Predict"):
